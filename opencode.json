@@ -1,0 +1,35 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md"],
+  "mcp": {
+    "jira": {
+      "type": "remote",
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "enabled": true
+    },
+    "confluence": {
+      "type": "remote",
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "enabled": true
+    }
+  },
+  "default_agent": "plan",
+  "command": {
+    "dev": {
+      "template": "npm run dev",
+      "description": "Start dev server"
+    },
+    "build": {
+      "template": "npm run build",
+      "description": "Production build"
+    },
+    "lint": {
+      "template": "npm run lint",
+      "description": "Run ESLint"
+    },
+    "preview": {
+      "template": "npm run preview",
+      "description": "Preview production build"
+    }
+  }
+}
